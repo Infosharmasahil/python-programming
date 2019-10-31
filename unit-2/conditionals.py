@@ -1,6 +1,5 @@
 total = 17
 
-...
 if total == 15: 
     print('good')
 else:
@@ -14,7 +13,7 @@ else:
 first_name = 'sahil'
 
 if len(first_name) > 7:
-    print(this is a good size)
+    print(this is a good size) 
 else:
     print(this is a bad size)
 
@@ -31,7 +30,7 @@ else:
     #if score is 50-59, print 'C'
 
     #otherwise, print 'F'
-...
+
 score = 55
 if score >= 80:
     print('A')
@@ -62,5 +61,5 @@ if a > 0 or b < 0 :
     print('Excellent')
 else:
     print('Not good')
-    
+
 
