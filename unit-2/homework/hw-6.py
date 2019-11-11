@@ -3,7 +3,7 @@ marvel_movies = ['Captain Marvel', 'Avengers Game', 'The Averngers','Iron Man 3'
 special_marvel_movies = []
 
 for movie_title in marvel_movies:
-    if 'The' in movie_title:
+    if 'the' in movie_title.lower():
         special_marvel_movies.append(movie_title)
 
 print(special_marvel_movies)
