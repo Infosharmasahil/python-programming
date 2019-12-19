@@ -33,25 +33,27 @@ print(alphabet_position('abc'))
 
 print(alphabet_position('Happy'))
 
-'''
+
 
 #functions for two arguments
 
+def pivot_split(my_list, my_num):
+    left = []
+    right = []
+    for num in my_list:
+        if num < my_num:
+            left.append(num)
 
-def search(pivot_split, pivot):
-    number = ''
-    for number in pivot:
-        if number <= pivot:
-            return pivot_split + pivot
         else:
-            return pivot_split + pivot
-        
-pivot_split = [10, 20, 30, 40, 50, 60, 70, 80, 90]
-pivot = [62]
+            right.append(num)
 
-print(number)
+    return [left, right]
 
-'''
+print(pivot_split([12, 30, 22, 4, -6, 88], 9))
+
+
+
+
 #isogram function
 
 def is_isogram(phrase):
@@ -59,10 +61,11 @@ def is_isogram(phrase):
     letter_list = []
 
     for letter in phrase:
-        if letter.isalpha():
+        
             if letter in letter_list:
                 return False
-            letter_list.append(letter)
+            else:
+                letter_list.append(letter)
     return True
     
 print(is_isogram('abc'))
